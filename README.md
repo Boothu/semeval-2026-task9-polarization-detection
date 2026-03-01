@@ -2,16 +2,9 @@
 
 This repo contains code to train an XLM-RoBERTa-base model & prompt Llama 2 (7B) and fulfil the SemEval 2026 polarisation detection task (Subtask 1).
 
-Dataset not included. Follow POLAR instructions to obtain it.
-
 ## Data
 
-Datasets are stored in the data/ folder, split into train/ and dev/ sets.
-
-CSV columns:
-- id
-- text
-- polarization
+Dataset not included. Follow POLAR instructions to obtain it.
 
 ## Setup XLM-RoBERTa
 
@@ -119,3 +112,4 @@ eval_predictions will evaluate a models predictions against the goldlabels and o
 python eval_predictions.py --pred ...\pred_{lang}.csv --gold data\dev_gold\{lang}.csv
 
 ```
+
